@@ -1,9 +1,6 @@
 import os
-import sys
 lineArr = []
-file = sys.argv[1]
-if len(sys.argv) != 2:
-    raise Exception("Expected 2 arguments, got " + str(len(sys.argv)) + "!")
+file = input("File to convert: ")
 if os.path.isfile(file):
     print("")
 else:
